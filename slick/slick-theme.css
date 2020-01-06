@@ -213,3 +213,17 @@
    
     opacity: 1;
 }
+@media (max-width: 883px) {
+    .slick-prev {
+        left: 50px;
+        }
+    .slick-next {
+        right: 50px;
+        }
+@media (max-width: 730px) {
+    .slick-prev {
+        left: 0;
+        }
+    .slick-next {
+        right: 0;
+        }

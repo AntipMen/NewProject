@@ -335,7 +335,7 @@ body {
   display: flex;
   width: 1200px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   }
 .text-box {
   display: flex;
@@ -343,11 +343,18 @@ body {
   line-height: 1.5;
   flex-direction: column; 
   max-width: 1000px;
+  margin: 0 50px 0 0;
+  color: #615855;
   }
 .text-box h2 {
   font-family: Raleway;
   font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
   }
+.text-box span {
+  color: #c7b299;
+}
 .liner_1 .click1 {
   margin: 0;
   text-align: center;
@@ -421,23 +428,26 @@ body {
   font-family: Raleway;
   font-size: 20px;
   padding: 16px;
+  font-weight: 400;
   }
 .article p {
   padding: 0 16px 10px;
 }
 .article:hover {
   background-color: #362f2d;
+  transition: all 1s ease;
   }
 .article:after {
   content: '';
   position: absolute;
   top: 0;
-  bottom: 25%;
+  bottom: 29%;
   left: 0;
   right: 0;
   background: #362f2d;
   display: none;
   opacity: 50%;
+  transition: all 2s ease;
   }
 .article:hover:after {
   display: block;
@@ -479,13 +489,12 @@ body {
   content: ''; 
   position: absolute;
   left: 20px; 
-  bottom: 88px; 
+  bottom: 99px; 
   border: 20px solid transparent; 
   border-bottom: 20px solid #fbfaf8;
   }
 .block5 {
   display: flex;
-  background-image: url("https://user-images.githubusercontent.com/58369971/70854707-24540500-1ec8-11ea-9d6c-c2a796a4faa2.png");
   max-width: 100%;
   height: 705px;
   align-items: center;
@@ -594,7 +603,7 @@ body {
   }
 .text-box3 ul {
   justify-content: flex-start;
-  margin: 3px 10px;
+  margin: 3px 0;
   padding: 20px;
   line-height: 1.5;
   }
@@ -675,6 +684,7 @@ body {
   font-family: Raleway;
   font-size: 20px;
   padding: 10px 10px;
+  font-weight: 300;
   }
 .article_1 p {
   color: #8c8c8c;
@@ -695,6 +705,7 @@ body {
   }
 .article_1:hover {
   background-color: #362f2d;
+  transition: all 2s ease;
   }
 .article_1:hover img {
   background: #362f2d;
@@ -779,7 +790,6 @@ body {
   }
 .block9 {
   display: flex;
-  background-image: url("https://user-images.githubusercontent.com/58369971/70855208-dfcc6780-1ecf-11ea-90a2-821944a1d36d.png");
   height: 489px;
   max-width: 100%; 
   }
@@ -787,6 +797,9 @@ body {
   margin: 20px;
   background-size: cover;
   }
+.block9 img:hover {
+  transform: scale(1.2);
+}
 .back {
   display: flex;
   width: 100%;
@@ -1193,10 +1206,12 @@ body {
     }
   .liner_1 {
   padding: 5px;
+  height: 180px;
     }
   .text-box {
+    max-width: 400px;
     text-align: center;
-    }
+  }
   .back {
     flex-wrap: wrap;
     }
@@ -1243,9 +1258,9 @@ body {
   .bar h3 {
     font-size: 30px;
   }
-.bar p {
+  .bar p {
   font-size: 12px;
-}
+  }
  .bar img { 
    width: 30px;
   }
@@ -1352,15 +1367,17 @@ body {
     width: 200px;
     justify-content: space-around;
     }
-  /* .bar div {
-    -ms-align-self: flex-start;
-    align-self: flex-start;
-  } */
+  .box_mini {
+    margin: 0;
+    }
   .bar img {
     margin: 5px;
     }
   .bar:after {
     display: none;
+  }
+  .text-box3 ul {
+    padding: 0;
   }
   }
 @media (max-width: 529px) {
@@ -1374,6 +1391,9 @@ body {
   .article:after {
     right: 61%;
     }
+  .ideas {
+    padding: 15px;
+  }
   }
 @media (max-width: 479px) {
   .menu__btn {
@@ -1383,12 +1403,18 @@ body {
     text-align: center;
     }
   .liner_1 {
-    flex-direction: column;
     height: 230px;
     padding: 10px;
+    text-align: center;
     }
+  .liner_2 {
+    max-width: 480px;
+    margin: 5px;
+    flex-direction: column;
+  }
   .text-box {
     text-align: center;
+    max-width: 430px;
     }
   .article {
     width: 340px;
@@ -1421,8 +1447,20 @@ body {
   .left1 {
     margin-bottom: 10px;
     }
+  .block9 img {
+    max-width: 
+   }
   }
 @media (max-width: 436px) {
+  .text1 p:nth-child(3) {
+    font-size: 12px;
+  }
+  .text1 h1 {
+    font-size: 30px;
+  }
+  .text1 p:first-child {
+    font-size: 20px;
+  }
   .logo img {
     max-width: 90%;
     }
@@ -1499,6 +1537,9 @@ body {
     max-width: 35%;
     margin: 5px;
     }
+  .liner_1 {
+    height: 280px;
+  }
   }
 @media (max-width: 320px) {
   header {
