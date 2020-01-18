@@ -236,8 +236,6 @@ body {
   }
 .block2 {
   display: flex;
-  background: #F1B4FA;
-  padding: 15px 0;
   background: #ffffff;
   padding: 15px;
   justify-content: center;
@@ -261,7 +259,6 @@ body {
   max-width: 266px;
   }
 .box_mini h3 {
-  color: #808080;
   font-family: 'Raleway', sans-serif;
   color: #555555;
   font-size: 22px;
@@ -386,6 +383,8 @@ body {
   }
 .click {
   margin: 20px;
+  display: flex;
+  justify-content: center;
   }
 .click button {
   width: 120px;
@@ -414,7 +413,7 @@ body {
 .article {
   margin: 15px;
   position: relative;
-  max-width: 100%;
+  max-width: 370px;
   color: #d1d1d1;
   font-family: Montserrat;
   font-size: 14px;
@@ -793,10 +792,6 @@ body {
   height: 489px;
   max-width: 100%; 
   }
-.block9 img {
-  margin: 20px;
-  background-size: cover;
-  }
 .block9 img:hover {
   transform: scale(1.2);
 }
@@ -806,10 +801,13 @@ body {
   height: 100%;
   background-color: #191919;
   opacity: 80%;
-   align-items: center;
+  align-items: center;
   justify-content: center;
   }
-.upper {
+.back img {
+  margin: 15px;
+}
+ .upper {
   display: flex;
   background-color: #191919;
   align-items: center;
@@ -1091,7 +1089,8 @@ body {
   .block4 {
     max-width: 100%;
     }
-  .article img {
+  .article img,
+  .article {
     max-width: 257px;
     }
   .article:hover {
@@ -1211,6 +1210,7 @@ body {
   .text-box {
     max-width: 400px;
     text-align: center;
+    justify-content: center;
   }
   .back {
     flex-wrap: wrap;
@@ -1248,6 +1248,7 @@ body {
     }
   .down1 {
     flex-wrap: wrap;
+    justify-content: center;
     }
   .logo2, .table2, .table3, .table4 {
     max-width: 260px;
@@ -1290,7 +1291,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 65%;
+    right: 62%;
     background: #362f2d;
     display: none;
     opacity: 50%;
@@ -1379,6 +1380,20 @@ body {
   .text-box3 ul {
     padding: 0;
   }
+    .down1 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+  .text_down, 
+  .text-all {
+    max-width: 550px;
+  }
+  .mini_photo {
+    flex-direction: row;
+  }
+  .logo2, .table2, .table3, .table4 {
+    max-width: 550px;
+    }
   }
 @media (max-width: 529px) {
   .down2 {
@@ -1394,7 +1409,11 @@ body {
   .ideas {
     padding: 15px;
   }
+.article,
+.article:hover {
+  max-height: 100%;
   }
+}
 @media (max-width: 479px) {
   .menu__btn {
     right: 20px;
@@ -1416,11 +1435,17 @@ body {
     text-align: center;
     max-width: 430px;
     }
+  .text-box2 {
+    align-items: flex-start;
+    }
+  .box-list {
+    max-width: 100%;
+  }
   .article {
     width: 340px;
-    }
+     }
   .article:hover {
-    width: 350px;
+    width: 340px;
     }
   .block6 {
     padding: 15px;
@@ -1440,16 +1465,19 @@ body {
     padding: 10px;
     }
   .down1 {
-   justify-content: flex-start;
+   justify-content: center;
    margin: 0;
    padding: 15px;
     }
   .left1 {
     margin-bottom: 10px;
     }
-  .block9 img {
-    max-width: 
-   }
+  .block4 .click {
+    align-self: center;
+    }
+  .click {
+  justify-content: center;
+  }
   }
 @media (max-width: 436px) {
   .text1 p:nth-child(3) {
@@ -1470,13 +1498,20 @@ body {
   header {
     justify-content: flex-start;
     }
+  .block4 {
+    max-width: 100%;
+    justify-content: center;
+    }
+  .text-box2 {
+    align-items: center;
+  }
   .box-list {
     flex-direction: column;
     max-width: 100%;
      }
-  .click button {
-     margin-left: 40px;
-     }
+  .click {
+    max-width: 400px;
+  }
   .article {
     flex-direction: column;
     max-width: 220px;
