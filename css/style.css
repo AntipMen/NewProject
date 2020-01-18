@@ -1060,6 +1060,10 @@ body {
     width: 100%;
     align-items: center;
     }
+    .arrow:before,
+    .arrow:after {
+    padding: 1px 7px;
+    }
   .back img {
       max-width: 80%;
       margin: 10px;
