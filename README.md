@@ -1,4 +1,4 @@
-# Waxom-Layout Prokect
+# Waxom-Layout Project
 
 ### This is my first layout of the site  for two screen sizes - Desktop and mobile.
 
